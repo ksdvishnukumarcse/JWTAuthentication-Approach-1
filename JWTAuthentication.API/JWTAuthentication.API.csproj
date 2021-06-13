@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\JWTAuthentication.Common\JWTAuthentication.Common.csproj" />
+		<ProjectReference Include="..\JWTAuthentication.Infrastructure.InMemory\JWTAuthentication.Infrastructure.InMemory.csproj" />
+		<ProjectReference Include="..\JWTAuthentication.Infrastructure\JWTAuthentication.Infrastructure.csproj" />
+		<ProjectReference Include="..\JWTAuthentication.Services\JWTAuthentication.Services.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.4" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+	</ItemGroup>
+
+</Project>
